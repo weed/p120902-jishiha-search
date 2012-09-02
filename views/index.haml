@@ -1,6 +1,13 @@
+%p このページは@jishihaさんのChrome検索エンジン活用のためのアドレスを自動生成します。
+%h2 やり方
+%p Chrome→環境設定→検索→検索エンジンの管理
+%a{:href => "http://www.flickr.com/photos/weed_77777/7886029716/"}
+  %img{:src => "http://farm9.staticflickr.com/8180/7886029716_4b9890f230.jpg"}
+%h2 アドレス入力
+%p 入力したアドレス以下のページを全文検索します
 %form{:method => "POST", :action => '/output'}
   %input{:type => "hidden", :name => "_method", :value => "PUT"}
-  %input{:type => "text", :name => "url"}
+  %input{:type => "text", :name => "url", :value => "http://weed.cocolog-nifty.com/wzero3es/"}
   %input{:type => "submit"}
 
 %div= @url
