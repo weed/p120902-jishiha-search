@@ -1,4 +1,7 @@
-%p このページは@jishihaさんのChrome検索エンジン活用のためのアドレスを自動生成します。
+このページは
+%a{:href => "http://blog.champierre.com/956"}
+  @jishihaさんのChrome検索エンジン活用
+のためのアドレスを自動生成します。
 %h2 やり方
 %p Chrome→環境設定→検索→検索エンジンの管理
 %a{:href => "http://www.flickr.com/photos/weed_77777/7886029716/"}
@@ -7,7 +10,7 @@
 %p 入力したアドレス以下のページを全文検索します
 %form{:method => "POST", :action => '/output'}
   %input{:type => "hidden", :name => "_method", :value => "PUT"}
-  %input{:type => "text", :name => "url", :value => "http://weed.cocolog-nifty.com/wzero3es/"}
+  %input{:type => "text", :name => "url", :size => 80, :value => "http://weed.cocolog-nifty.com/wzero3es/"}
   %input{:type => "submit"}
 
 %div= @url
