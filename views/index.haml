@@ -1,4 +1,6 @@
 %form{:method => "POST", :action => '/output'}
-　　%input{:type => "hidden", :name => "_method", :value => "PUT"}
-　　%input{:type => "text", :name => "url"}
-　　%input{:type => "submit"}
+  %input{:type => "hidden", :name => "_method", :value => "PUT"}
+  %input{:type => "text", :name => "url"}
+  %input{:type => "submit"}
+
+%div= @url
