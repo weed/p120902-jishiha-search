@@ -1,6 +1,10 @@
 require 'sinatra'
-require 'cgi'
+require 'haml'
 
-get '/:url' do
-  "https://www.google.co.jp/search?hl=ja&as_q=%s&as_sitesearch=" + CGI.escape(params['url'])
+get '/' do
+  haml :index
+end
+
+get '/output' do
+  "https://www.google.co.jp/search?hl=ja&as_q=%s&as_sitesearch=" + params['url']
 end
