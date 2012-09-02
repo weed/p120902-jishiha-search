@@ -6,5 +6,5 @@ get '/' do
 end
 
 get '/output' do
-  "https://www.google.co.jp/search?hl=ja&as_q=%s&as_sitesearch=" + params['url']
+  @url = "https://www.google.co.jp/search?hl=ja&as_q=%s&as_sitesearch=" + params['url']
 end
